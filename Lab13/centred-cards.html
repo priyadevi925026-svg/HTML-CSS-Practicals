@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Priya Devi
+  Roll Number: 2510303391
+  Assignment: Assignment 13 - Task 2 (Centred Flexbox Cards)
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  Institution: Invertis University, Bareilly
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centred Cards Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 24px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #1d3557;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="card">
+            <h3>Starter</h3>
+            <p class="price">&#8377;199</p>
+        </div>
+        <div class="card">
+            <h3>Standard</h3>
+            <p class="price">&#8377;349</p>
+        </div>
+        <div class="card">
+            <h3>Premium</h3>
+            <p class="price">&#8377;499</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Priya Devi
+  Roll Number: 2510303391
+  Assignment: Assignment 15 - Task 1 (Mobile-First Responsive Layout)
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  Institution: Invertis University, Bareilly
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First Responsive Cards</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        /* Mobile-First Base Styles (Stacked) */
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            color: #1d3557;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Breakpoint for screens 600px and up (Side by Side) */
+        @media (min-width: 600px) {
+            .cards {
+                flex-direction: row;
+            }
+
+            .card {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 20px;">Mobile First Layout</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>Card Alpha</h2>
+            <p>On mobile devices under 600px, this card is stacked vertically. On wider screens, it flows side by side.</p>
+        </div>
+        <div class="card">
+            <h2>Card Beta</h2>
+            <p>Demonstrating fluid and responsive flexbox layouts with media queries.</p>
+        </div>
+    </div>
+</body>
+</html>

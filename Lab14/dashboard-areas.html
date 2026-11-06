@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Priya Devi
+  Roll Number: 2510303391
+  Assignment: Assignment 14 - Task 3 (CSS Grid Named Areas Layout)
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  Institution: Invertis University, Bareilly
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Grid Areas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+                "header  header"
+                "sidebar main"
+                "footer  footer";
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #023e8a;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #e2eafc;
+            padding: 20px;
+            border-right: 2px solid #b6ccfe;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #03045e;
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h2>Dashboard Header</h2>
+        </header>
+
+        <aside class="sidebar">
+            <h3>Sidebar Nav</h3>
+            <ul>
+                <li>Overview</li>
+                <li>Analytics</li>
+                <li>Reports</li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            <h3>Main Content Section</h3>
+            <p>Welcome to the dashboard layout structured using CSS Grid Named Areas.</p>
+        </main>
+
+        <footer class="footer">
+            <p>Dashboard Footer &copy; 2026 Invertis University</p>
+        </footer>
+    </div>
+</body>
+</html>

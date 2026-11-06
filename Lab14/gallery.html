@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Priya Devi
+  Roll Number: 2510303391
+  Assignment: Assignment 14 - Task 2 (Responsive Photo Gallery)
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  Institution: Invertis University, Bareilly
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f7f9fa;
+        }
+
+        h1 {
+            color: #2b2d42;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .photo-box {
+            background-color: #8338ec;
+            color: #ffffff;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Club Photo Gallery</h1>
+    <div class="gallery">
+        <div class="photo-box">Photo 1</div>
+        <div class="photo-box">Photo 2</div>
+        <div class="photo-box">Photo 3</div>
+        <div class="photo-box">Photo 4</div>
+        <div class="photo-box">Photo 5</div>
+        <div class="photo-box">Photo 6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Priya Devi
+  Roll Number: 2510303391
+  Assignment: Assignment 12 - Task 1 (Box Sizing Comparison)
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  Institution: Invertis University, Bareilly
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Comparison</title>
+    <style>
+        .box1 {
+            box-sizing: content-box;
+            width: 200px;
+            padding: 20px;
+            border: 5px solid #e63946;
+            background-color: #f1faee;
+            margin-bottom: 20px;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            width: 200px;
+            padding: 20px;
+            border: 5px solid #1d3557;
+            background-color: #a8dadc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model Comparison</h1>
+    <div class="box1">
+        <strong>Box 1: content-box</strong><br>
+        Width: 200px + 40px padding + 10px border = 250px total rendered width.
+    </div>
+
+    <div class="box2">
+        <strong>Box 2: border-box</strong><br>
+        Width: 200px total rendered width (padding and border included inside).
+    </div>
+</body>
+</html>

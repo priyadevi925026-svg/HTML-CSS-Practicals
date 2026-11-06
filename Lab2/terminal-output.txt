@@ -1,0 +1,49 @@
+﻿================================================================================
+INVERTIS UNIVERSITY, BAREILLY
+B.Tech CSE - Second Year
+HTML and CSS Introduction Lab (BCS352)
+Assignment 2: Pushing and Cloning a Repository
+Name: Priya Devi
+Roll Number: 2510303391
+================================================================================
+
+--------------------------------------------------------------------------------
+Task 1: Create a bare repository ../html-remote, add origin and verify
+--------------------------------------------------------------------------------
+Commands:
+$ cd html-lab
+$ git init --bare ../html-remote
+$ git remote add origin ../html-remote
+$ git remote -v
+
+Terminal Output:
+Initialized empty Git repository in C:/Users/KANCHAN TOMAR/.gemini/antigravity/scratch/HTML-CSS-Practicals/Lab2/html-remote/
+origin	../html-remote (fetch)
+origin	../html-remote (push)
+
+--------------------------------------------------------------------------------
+Task 2: Push your commits to origin with git push origin master
+--------------------------------------------------------------------------------
+Commands:
+$ git push origin master
+
+Terminal Output:
+To ../html-remote
+ * [new branch]      master -> master
+
+--------------------------------------------------------------------------------
+Task 3: Go up one folder, clone html-remote into html-copy and verify log
+--------------------------------------------------------------------------------
+Commands:
+$ cd ..
+$ git clone html-remote html-copy
+$ cd html-copy
+$ git log --oneline
+
+Terminal Output:
+Cloning into 'html-copy'...
+done.
+c14b3bc Add next meeting heading
+3fdf7e8 Add home page
+
+================================================================================

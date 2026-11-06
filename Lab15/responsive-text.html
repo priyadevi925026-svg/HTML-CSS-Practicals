@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Priya Devi
+  Roll Number: 2510303391
+  Assignment: Assignment 15 - Task 3 (Fluid Typography with REM Units)
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  Institution: Invertis University, Bareilly
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Typography</title>
+    <style>
+        body {
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #03045e;
+            margin-bottom: 15px;
+        }
+
+        /* 600px and up */
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Heading Scaling</h1>
+    <p>This heading begins at 1.5rem on small phone screens, and enlarges to 2.5rem on screens 600px wide or wider.</p>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Priya Devi
+  Roll Number: 2510303391
+  Assignment: Assignment 13 - Task 3 (Flex Wrap Stationery Shop)
+  Subject: HTML and CSS Introduction Lab (BCS352)
+  Institution: Invertis University, Bareilly
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapping Cards - Stationery Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        h1 {
+            color: #2b2d42;
+            margin-bottom: 20px;
+        }
+
+        .wrap-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 200px;
+            min-width: 180px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #0077b6;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2a9d8f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stationery Shop</h1>
+    <div class="wrap-container">
+        <div class="card">
+            <h3>Notebook</h3>
+            <p class="price">&#8377;60</p>
+        </div>
+        <div class="card">
+            <h3>Pen</h3>
+            <p class="price">&#8377;15</p>
+        </div>
+        <div class="card">
+            <h3>Bag</h3>
+            <p class="price">&#8377;350</p>
+        </div>
+        <div class="card">
+            <h3>Book</h3>
+            <p class="price">&#8377;120</p>
+        </div>
+    </div>
+</body>
+</html>
